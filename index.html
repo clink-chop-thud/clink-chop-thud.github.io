@@ -79,8 +79,10 @@
                     <span class="eql-advising"><small><sup>†</sup>Indicates Equal Advising</small></span> -->
                   </div>
                   
-                  <div class="title is-3 publication-title" style="margin-top: 1.5rem; margin-bottom: 0.25rem;">
-                    <strong>ICCV 2025</strong>
+                  <div class="title is-5 publication-title" style="margin-top: 1.5rem; margin-bottom: 0.25rem;">
+                    <a href="https://iccv.thecvf.com/" target="_blank">
+                      <strong>ICCV 2025</strong>
+                    </a>
                   </div>
                   
                   <!-- Arxiv PDF link -->
@@ -98,7 +100,7 @@
 
                   <!-- ArXiv abstract Link -->
                   <span class="link-block">
-                    <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    <a href="https://clink-chop-thud.github.io/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -120,7 +122,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://clink-chop-thud.github.io/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -143,7 +145,7 @@
     <div class="hero-body">
       <img src="static/images/teaser.png" alt="Teaser image showing object sound learning" class="teaser-image"/>
       <h2 class="subtitle has-text-centered">
-        Humans handle a wide variety of objects throughout the day, and many of these interactions produce sounds. We introduce a <strong>multimodal, object-aware</strong> framework that learns the relationship between the objects in an interaction and the resulting sounds. This enables our model to detect the objects involved given a set of objects present in the scene.
+        Humans handle a wide variety of objects throughout the day and many of these interactions produce sounds. We introduce a multimodal <i>object-aware</i> framework that learns the relationship between the objects in an interaction and the resulting sounds. This enables our model to detect the <i>sounding objects</i> from a set of candidates in a scene.
       </h2>
     </div>
   </div>
@@ -219,7 +221,7 @@
             We introduce a manually labelled benchmark to evaluate sounding object detection. Ground truth objects are highlighted by <span style="color: red;">red</span> and <span style="color: green;">green</span> segmentation masks.
           </h2>
           <div class="has-text-centered">
-            <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <video poster="" id="video1" controls muted loop height="100%">
               <source src="static/videos/benchmark_video.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -238,7 +240,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Can a model distinguish between the sound of a spoon hitting a hardwood floor versus a carpeted one? Everyday object interactions produce sounds unique to the objects involved. We introduce the sounding object detection task to evaluate a model's ability to link these sounds to the objects directly responsible. Inspired by human perception, our multimodal object-aware framework learns from in-the-wild egocentric videos. Our model enforces object-awareness by using a slot attention visual encoder. We then develop an automatic method to compute segmentation masks of the objects involved to guide the model's focus towards the most informative regions of the interaction. We demonstrate state of the art performance on our new task along with existing multimodal action understanding tasks.
+            Can a model distinguish between the sound of a spoon hitting a hardwood floor versus a carpeted one? Everyday object interactions produce sounds unique to the objects involved. We introduce the sounding object detection task to evaluate a model's ability to link these sounds to the objects directly involved. Inspired by human perception, our multimodal object-aware framework learns from in-the-wild egocentric videos. To encourage an object-centric approach, we first develop an automatic pipeline to compute segmentation masks of the objects involved to guide the model's focus during training towards the most informative regions of the interaction. A slot attention visual encoder is used to further enforce an object prior. We demonstrate state of the art performance on our new task along with existing multimodal action understanding tasks.
           </p>
         </div>
       </div>
