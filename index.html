@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Clink! Chop! Thud!</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -53,9 +53,6 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Clink! Chop! Thud! — Learning Object Sounds from Real-World Interactions</h1>
-            <div class="title is-3 publication-title" style="margin-bottom: 1rem;">
-              <strong>ICCV 2025</strong>
-            </div>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -81,10 +78,14 @@
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                     <span class="eql-advising"><small><sup>†</sup>Indicates Equal Advising</small></span> -->
                   </div>
-
+                  
+                  <div class="title is-3 publication-title" style="margin-top: 1.5rem; margin-bottom: 0.25rem;">
+                    <strong>ICCV 2025</strong>
+                  </div>
+                  
+                  <!-- Arxiv PDF link -->
                   <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                    <!-- <div class="publication-links">
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -93,7 +94,7 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
                   <!-- ArXiv abstract Link -->
                   <span class="link-block">
@@ -149,24 +150,6 @@
 </section>
 <!-- End teaser image -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Can a model distinguish between the sound of a spoon hitting a hardwood floor versus a carpeted one? Everyday object interactions produce sounds unique to the objects involved. We introduce the sounding object detection task to evaluate a model's ability to link these sounds to the objects directly responsible. Inspired by human perception, our multimodal object-aware framework learns from in-the-wild egocentric videos. Our model enforces object-awareness by using a slot attention visual encoder. We then develop an automatic method to compute segmentation masks of the objects involved to guide the model's focus towards the most informative regions of the interaction. We demonstrate state of the art performance on our new task along with existing multimodal action understanding tasks.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
 <!-- Image carousel -->
 <!-- <section class="hero is-small">
   <div class="hero-body">
@@ -208,44 +191,61 @@
 </section> -->
 <!-- End image carousel -->
 
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Sounding Object Detection</h2>
-      <div class="container is-max-desktop">
-        <div class="hero-body">
-          <div class="has-text-centered">
-            <img src="https://placehold.co/600x400?text=Sounding+object+detection+results" alt="Sounding object detection results" class="teaser-image"/>
-          </div>
-          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
-            Our multimodal, object-aware framework learns to associate sounds with the objects that produce them. The model uses object segmentation masks to focus on relevant regions and employs slot attention for object-aware visual encoding. During training, we use hard negatives from non-interaction regions to improve the model's ability to distinguish between sounding and non-sounding objects.
-          </h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Sounding Action Discovery</h2>
+      <h2 class="title is-3 has-text-centered" style="margin-top: 1.5rem">Sounding Object Detection</h2>
       <div class="container is-max-desktop">
         <div class="hero-body">
-          <div class="has-text-centered">
-            <img src="https://placehold.co/600x400?text=Sounding+action+discovery+results" alt="Method architecture overview" class="teaser-image"/>
-          </div>
-          <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
-            Our multimodal, object-aware framework learns to associate sounds with the objects that produce them. The model uses object segmentation masks to focus on relevant regions and employs slot attention for object-aware visual encoding. During training, we use hard negatives from non-interaction regions to improve the model's ability to distinguish between sounding and non-sounding objects.
+          <h2 class="subtitle has-text-centered" style="margin-top: 0px;">
+            While an environment may contain many objects, only a few are directly involved in producing sound during an interaction. Our model detects the <i>sounding object</i> given a video of an object interaction.
           </h2>
+          <div class="has-text-centered">
+            <img src="https://placehold.co/600x400?text=Sounding+object+detection+results" alt="Sounding object detection results" class="teaser-image"/>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<section class="hero is-small ">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered" style="margin-top: 1.5rem">Sounding Object Detection Benchmark</h2>
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <h2 class="subtitle has-text-centered" style="margin-top: 0px;">
+            We introduce a manually labelled benchmark to evaluate sounding object detection. Ground truth objects are highlighted by <span style="color: red;">red</span> and <span style="color: green;">green</span> segmentation masks.
+          </h2>
+          <div class="has-text-centered">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+              <source src="static/videos/benchmark_video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Can a model distinguish between the sound of a spoon hitting a hardwood floor versus a carpeted one? Everyday object interactions produce sounds unique to the objects involved. We introduce the sounding object detection task to evaluate a model's ability to link these sounds to the objects directly responsible. Inspired by human perception, our multimodal object-aware framework learns from in-the-wild egocentric videos. Our model enforces object-awareness by using a slot attention visual encoder. We then develop an automatic method to compute segmentation masks of the objects involved to guide the model's focus towards the most informative regions of the interaction. We demonstrate state of the art performance on our new task along with existing multimodal action understanding tasks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
 
 <!-- Youtube video -->
 <!-- <section class="hero is-small is-light">
