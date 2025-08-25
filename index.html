@@ -255,15 +255,77 @@
 <section class="hero is-small ">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3 has-text-centered" style="margin-top: 1.5rem">Sounding Object Detection Benchmark</h2>
+      <h2 class="title is-3 has-text-centered" style="margin-top: 1.5rem">Sounding Action Discovery</h2>
       <div class="container is-max-desktop">
         <div class="hero-body">
           <h2 class="subtitle has-text-centered" style="margin-top: 0px;">
             Our object-aware framework also achieves state-of-the-art performance on <i>sounding action discovery</i>, first introduced by <a href="https://vision.cs.utexas.edu/projects/soundingactions/">[Chen et al.]</a>
           </h2>
-          <div class="has-text-centered">
-            
+
+          <div class="content has-text-centered" style="margin-top: 2rem;">
+            <figure class="image is-inline-block">
+              <img src="static/images/sounding_action_discovery.png" alt="Table of results for sounding action discovery benchmark">
+            </figure>
           </div>
+          <!-- <div class="is-flex is-justify-content-center" style="margin-top: 2rem;">
+            <table class="table is-bordered is-striped is-narrow">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th colspan="2" class="has-text-centered"><em>AV</em></th>
+                  <th colspan="2" class="has-text-centered"><em>AL</em></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th class="has-text-centered">ROC</th>
+                  <th class="has-text-centered">PR</th>
+                  <th class="has-text-centered">ROC</th>
+                  <th class="has-text-centered">PR</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Random</td>
+                  <td class="has-text-centered">0.500</td>
+                  <td class="has-text-centered">0.587</td>
+                  <td class="has-text-centered">0.500</td>
+                  <td class="has-text-centered">0.587</td>
+                </tr>
+                <tr>
+                  <td><a href="https://imagebind.metademolab.com/" target="_blank" rel="noopener noreferrer">ImageBind</a></td>
+                  <td class="has-text-centered">0.524</td>
+                  <td class="has-text-centered">0.611</td>
+                  <td class="has-text-centered">0.527</td>
+                  <td class="has-text-centered">0.632</td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/PKU-YuanGroup/LanguageBind" target="_blank" rel="noopener noreferrer">LanguageBind</a></td>
+                  <td class="has-text-centered">0.529</td>
+                  <td class="has-text-centered">0.627</td>
+                  <td class="has-text-centered">0.551</td>
+                  <td class="has-text-centered">0.636</td>
+                </tr>
+                <tr>
+                  <td><a href="https://vision.cs.utexas.edu/projects/soundingactions/" target="_blank" rel="noopener noreferrer">SoundingActions</a></td>
+                  <td class="has-text-centered">0.592</td>
+                  <td class="has-text-centered">0.683</td>
+                  <td class="has-text-centered">0.616</td>
+                  <td class="has-text-centered">0.720</td>
+                </tr>
+                <tr>
+                  <td><strong>Ours</strong></td>
+                  <td class="has-text-centered"><strong>0.617</strong></td>
+                  <td class="has-text-centered"><strong>0.706</strong></td>
+                  <td class="has-text-centered"><strong>0.630</strong></td>
+                  <td class="has-text-centered"><strong>0.726</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="has-text-centered is-size-7 has-text-grey" style="margin-top: 1rem;">
+            <b>Table 1:</b> Sounding action discovery results for audio-vision (AV) and audio-language (AL). We report area-under-curve values for receiver operating characteristic (ROC) and precision-recall (PR) curves. We compare against the previous state of the art along with zero-shot contrastive methods.
+          </p>
+          </div> -->
         </div>
       </div>
     </div>
@@ -340,7 +402,7 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@inproceedings{yang2025clink,
